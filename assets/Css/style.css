@@ -111,8 +111,6 @@ button{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.411);
 }
 #pink{
-    border: 2px solid black;
-    opacity: .95;
     background-color: #F8DDD6;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.411);
 }

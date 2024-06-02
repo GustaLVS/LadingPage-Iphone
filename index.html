@@ -42,12 +42,12 @@
 
                 
                     <div class="content">
-                        <button class="cor" id="grenn"></button>
-                        <button class="cor" id="pink"></button>
-                        <button class="cor" id="blue"></button>
-                        <button class="cor" id="black"></button>
-                        <button class="cor" id="white"></button>
-                        <button class="cor" id="red"></button>
+                        <button class="cor" id="grenn" onclick="imgSlider('assets/imagens/green.png'); CircleColor('#384937')"></button>
+                        <button class="cor" id="pink" onclick="imgSlider('assets/imagens/pink.png'); CircleColor('#F8DDD6')"></button>
+                        <button class="cor" id="blue" onclick="imgSlider('assets/imagens/blue.png'); CircleColor('#225F7E')"></button>
+                        <button class="cor" id="black" onclick="imgSlider('assets/imagens/black.png'); CircleColor('#192028')"></button>
+                        <button class="cor" id="white" onclick="imgSlider('assets/imagens/white.png'); CircleColor('#F7F2EE')"></button>
+                        <button class="cor" id="red" onclick="imgSlider('assets/imagens/red.png'); CircleColor('#AE0617')"></button>
                     </div>
                 
             </div>
@@ -56,5 +56,15 @@
             </div>
         </div>
     </main>
+    <script type="text/javascript">
+        function imgSlider(e){
+            document.querySelector('#iphone').src = e;
+            const circle = document.querySelector('.circle');
+        }
+            function CircleColor(color){
+                const circle = document.querySelector('.circle');
+                circle.style.background = color;
+            }
+        </script>
 </body>
 </html>
